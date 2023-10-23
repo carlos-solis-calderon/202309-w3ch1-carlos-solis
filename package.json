@@ -1,7 +1,7 @@
 {
   "name": "week3",
   "version": "1.0.0",
-  "description": "Week 1 del Bootcamp",
+  "description": "Week 3 de bootcamp",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "sass": "sass scss:css -w --no-source-map"
   },
   "keywords": [],
-  "author": "Alejandro Cerezo",
+  "author": "Carlos Solis",
   "license": "ISC",
   "prettier": {
     "singleQuote": true
