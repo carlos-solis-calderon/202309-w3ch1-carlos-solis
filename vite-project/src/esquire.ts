@@ -1,19 +1,19 @@
 import { Character } from './character';
 
-export class Fighter extends Character {
-  personalQuote = 'Primero pego y luego pregunto';
-    skill = number,
-    weapon: string;
+export class Squire extends Character {
+  patron: string;
+  personalQuote: string = 'Soy un loser';
+  servilityGrade: number;
 
   constructor(
     name: string,
     family: string,
     age: number,
-
+    servilityGrade: number
   ) {
     super(name, family, age);
-    this.skill = skill;
-    this.weapon = weapon;
+    this.patron = 'Fighter';
+    this.servilityGrade = servilityGrade;
   }
 
   phrase() {

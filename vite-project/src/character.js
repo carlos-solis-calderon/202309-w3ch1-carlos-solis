@@ -1,19 +1,20 @@
-class Character {
-    name;
-    family;
-    age;
-    serie = "Game of thrones";
-    constructor(characterName, characterFamily, characterAge) {
-        this.name = characterName;
-        this.family = characterFamily;
-        this.age = characterAge;
-    }
-}
-{
+export class Character {
+  name: string;
+  family: string;
+  age: number;
+  status: boolean = true;
+
+  constructor(name: string, family: string, age: number) {
+    this.name = name;
+    this.family = family;
+    this.age = age;
+  }
+
+  phrase(value: string) {
     return value;
-}
-Dead();
-{
+  }
+
+  dead() {
     this.status = false;
+  }
 }
-export {};

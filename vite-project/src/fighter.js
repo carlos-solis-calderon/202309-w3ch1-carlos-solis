@@ -1,14 +1,22 @@
 import { Character } from './character';
 export class Fighter extends Character {
-    phrasePersonal = 'Primero pego y luego pregunto';
-    skill;
-    weapon;
-    constructor(name, family, age, status, years) {
-        super(name, family, age, status);
-        this.skill = skill;
-        this.weapon = weapon;
-    }
-    phrase() {
-        return super.phrase(this.phrasePersonal);
-    }
+  skill: number;
+  weapon: string;
+  phrasePersonal: string = 'Primero pego y luego pregunto';
+
+  constructor(
+    name: string,
+    family: string,
+    age: number,
+    weapon: string,
+    skill: number
+  ) {
+    super(name, family, age);
+    this.weapon = weapon;
+    this.skill = skill;
+  }
+
+  phrase() {
+    return super.phrase(this.phrasePersonal);
+  }
 }

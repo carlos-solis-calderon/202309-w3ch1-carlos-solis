@@ -1,21 +1,20 @@
-import { King } from "./king";
+export class Character {
+  name: string;
+  family: string;
+  age: number;
+  status: boolean = true;
 
-class Character {
-name: string,
-family: string,
-age: number,
-serie = "Game of thrones";
+  constructor(name: string, family: string, age: number) {
+    this.name = name;
+    this.family = family;
+    this.age = age;
+  }
 
-constructor(characterName: string, characterFamily: string, characterAge: number) {
-  this.name = characterName;
-  this.family = characterFamily;
-  this.age = characterAge;
-}
-phrase(value:string) => {
-  return value;
-}
-Dead() => {
-  this.status = false;
+  phrase(value: string) {
+    return value;
+  }
 
-}
+  dead() {
+    this.status = false;
+  }
 }
